@@ -138,6 +138,7 @@ module.exports = function(grunt) {
 						},
 						section: {
 							demo_section: '<%= src_html %>/demo_section.html',
+							hero_section: '<%= src_html %>/hero_section.html',
 						},
 						widget: {
 							demo_widget: '<%= src_html %>/demo_widget.html',

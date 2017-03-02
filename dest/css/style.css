@@ -4010,3 +4010,152 @@ select {
 }
 /* IV. SKELETON
 ***********************/
+@font-face {
+  font-family: Brush-Script;
+  src: url(../fonts/BrushScriptMT.ttf);
+}
+.text-Rose {
+  color: #c3917d;
+}
+.background-Rose {
+  background-color: #c3917d;
+  color: white;
+}
+p {
+  font-size: 14px;
+}
+a:hover {
+  text-decoration: none;
+}
+.ht-header {
+  position: relative;
+}
+.ht-header .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.hero {
+  background-image: url(../images/home/hero.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+.hero .hero-text {
+  color: white;
+  padding: 350px 0 730px;
+  -webkit-backdrop-filter: brightness(75%);
+}
+.hero .hero-text h2 {
+  font-family: Brush-Script;
+}
+.hero .hero-text h1 {
+  font-family: 'Droid Serif', serif;
+  font-size: 72px;
+  font-weight: 700px;
+  display: inline-block;
+  padding: 10px;
+  margin: 25px 0;
+  border-bottom: 5px solid white;
+  border-top: 5px solid white;
+}
+.hero .hero-text h4 {
+  font-family: 'Droid Serif', serif;
+}
+.hero .three-blocks {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -415px;
+}
+.hero .three-blocks figure {
+  background-color: #364151;
+  padding: 0;
+}
+.hero .three-blocks figure figcaption h1 {
+  color: white;
+  font-family: Brush-Script;
+  padding-top: 30px;
+}
+.hero .three-blocks figure figcaption .block-content {
+  height: 290px;
+  box-sizing: border-box;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding: 25px 0;
+  margin: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hero .three-blocks figure figcaption .block-content p {
+  color: #7b8189;
+  font-family: 'Droid Serif', serif;
+  line-height: 25px;
+}
+.hero .three-blocks figure figcaption .block-content p span {
+  color: #c3917d;
+}
+.hero .three-blocks figure figcaption .block-content h5 a {
+  color: #c3917d;
+  font-family: 'Droid Serif', serif;
+  font-weight: 300;
+  font-style: Italic;
+}
+.hero .three-blocks figure:nth-child(2) {
+  box-shadow: 0 0 10px black;
+  background-color: #323c4b;
+  -webkit-transform: scale(1.03);
+  z-index: 1;
+}
+nav {
+  padding: 40px 40px;
+}
+nav .navbar-header .navbar-toggle {
+  margin: 0;
+}
+nav .navbar-header h4 {
+  display: inline;
+}
+nav .navbar-header h4 a {
+  font-family: 'Droid Serif', serif;
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  nav .navbar-collapse {
+    padding: 0;
+  }
+}
+nav .nav li {
+  padding: 0 20px;
+}
+nav .nav li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 0 20px 0;
+  font-family: 'Droid Serif', serif;
+}
+nav .nav li a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background: white;
+  -webkit-transition: -webkit-transform 0.35s;
+  -webkit-transform: translate3d(-103%, 0, 0);
+}
+nav .nav li:focus a,
+nav .nav li:hover a {
+  color: #c3917d;
+}
+nav .nav li:focus a:after,
+nav .nav li:hover a:after {
+  -webkit-transform: translate3d(0, 0, 0);
+}
