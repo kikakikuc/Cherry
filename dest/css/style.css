@@ -4054,9 +4054,24 @@ h6 {
 .text-Pink {
   color: #c3917d;
 }
+.text-Heading {
+  font-family: Brush-Script;
+  font-size: 7.2rem;
+}
 .background-Pink {
   background-color: #c3917d;
   color: white;
+}
+.btn-Pink {
+  background-color: #c3917d;
+  color: white;
+  font-family: 'Droid Serif', serif;
+}
+.btn-Pink:focus,
+.btn-Pink:hover {
+  background-color: white;
+  color: #c3917d;
+  border-color: #c3917d;
 }
 a:hover {
   text-decoration: none;
@@ -4073,6 +4088,7 @@ a:hover {
 }
 .hero {
   background-image: url(../images/home/hero.jpg);
+  background-position: center;
   background-size: cover;
   text-align: center;
   position: relative;
@@ -4181,6 +4197,9 @@ a:hover {
   width: 100%;
   height: auto;
 }
+.special-menu .grid .grid-item p {
+  word-break: break-all;
+}
 .special-menu .grid .grid-item .menus {
   color: #c3917d;
   display: flex;
@@ -4189,16 +4208,33 @@ a:hover {
   border-bottom: 2px dotted #c3917d;
   padding: 15px 0;
 }
-.special-menu button {
-  background-color: #c3917d;
-  color: white;
-  font-family: 'Droid Serif', serif;
+.parallax {
+  background-image: url(../images/home/parallax.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 750px;
 }
-.special-menu button:focus,
-.special-menu button:hover {
-  background-color: white;
-  color: #c3917d;
-  border-color: #c3917d;
+.parallax .parallax-heading {
+  color: white;
+  text-align: center;
+  -webkit-backdrop-filter: brightness(50%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.parallax .parallax-heading .heading-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
+}
+.parallax .parallax-heading .heading-display h1 {
+  font-family: Brush-Script;
+  font-size: 7.2rem;
+}
+.parallax .parallax-heading .heading-display:last-child {
+  font-style: Italic;
 }
 nav {
   padding: 40px 40px;
