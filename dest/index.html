@@ -34,29 +34,29 @@
 
 <!-- BEGIN | Header -->
 <header class="ht-header">
+	<div class="menus">
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseNav">
+						<i class="fa fa-bars"></i>
+					</button>
+					<h4><a href="index.html">CHERRY</a></h4>
+				</div>
 
-	<nav class="navbar">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseNav">
-					<i class="fa fa-bars"></i>
-				</button>
-				<h4><a href="index.html">CHERRY</a></h4>
+				<div class="collapse navbar-collapse" id="collapseNav">
+					<ul class="nav navbar-nav navbar-right search">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="menus.html">Menus</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="pages.html">Pages</a></li>
+					</ul>
+				</div>
 			</div>
-
-			<div class="collapse navbar-collapse" id="collapseNav">
-				<ul class="nav navbar-nav navbar-right search">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="menus.html">Menus</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="pages.html">Pages</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	
+		</nav>
+	</div>
 
 </header>
 <!-- END | Header -->
@@ -108,6 +108,103 @@
 	</div>
 </div>
 
+
+<div class="container special-menu">
+	<div class="heading">
+		<h1>Our Special Menus</h1>
+		<h5>WE OFFER THE BEST TASTE EXPERIENCE</h5>
+	</div>
+
+	<div class="iso-nav text-center">
+		<ul class="list-inline filter">
+			<li class="active" data-filter="*">All</li>
+			<li data-filter=".breakfast">Breakfast</li>
+			<li data-filter=".lunch">Lunch</li>
+			<li data-filter=".drink">Drink</li>
+		</ul>
+	</div>
+
+	<div class="grid">
+			<div class="col-md-3 grid-item breakfast">
+				<img src="images/home/special-menu-1.jpg" alt="">
+				<h4>Pear-blue cheese salad</h4>
+				<p>Praesent auctor tempor purus, vitae tempus metus semper at. Fusce scelerisque turpis nec nunc con.</p>
+				<div class="menus">
+					<div class="thumb">
+						<p>1 person</p>
+						<p>2 persons</p>
+						<p>Small group (2-4 persons)</p>
+					</div>
+
+					<div class="price">
+						<p>$15.00</p>
+						<p>$28.00</p>
+						<p>$45.00</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-3 grid-item lunch">
+					<img src="images/home/special-menu-2.jpg" alt="">
+					<h4>Avocado basil pasta</h4>
+					<p>Etiam mattis nisl non auctor vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+					<div class="menus">
+						<div class="thumb">
+							<p>1 person</p>
+							<p>2 persons</p>
+							<p>Small group (2-4 persons)</p>
+						</div>
+
+						<div class="price">
+							<p>$15.00</p>
+							<p>$28.00</p>
+							<p>$45.00</p>
+						</div>
+					</div>
+			</div>
+			<div class=" col-md-3 grid-item drink ">
+					<img src="images/home/special-menu-3.jpg" alt="">
+					<h4>Garlic bread with chard</h4>
+					<p>Nunc facilisis hendrerit nibh, nec hendrerit ligula congue dapibus. Pellentesque molestie mauris nec mauris.</p>
+					<div class="menus">
+						<div class="thumb">
+							<p>1 person</p>
+							<p>2 persons</p>
+							<p>Small group (2-4 persons)</p>
+						</div>
+
+						<div class="price">
+							<p>$15.00</p>
+							<p>$28.00</p>
+							<p>$45.00</p>
+						</div>
+					</div>
+			</div>
+			<div class="col-md-3 grid-item breakfast ">
+					<img src="images/home/special-menu-4.jpg" alt="">
+						<h4>Chicken enchiladas adobo</h4>
+						<p>Curabitur ac cursus mauris, quis fringilla elit. Aenean auctor felis rhoncus lectus ultrices euismod.</p>
+					<div class="menus">
+						<div class="thumb">
+							<p>1 person</p>
+							<p>2 persons</p>
+							<p>Small group (2-4 persons)</p>
+						</div>
+
+						<div class="price">
+							<p>$15.00</p>
+							<p>$28.00</p>
+							<p>$45.00</p>
+						</div>
+					</div>
+			</div>
+	</div>
+	 <div class="row text-center">
+		<button class="btn">SEE ALL MENUS</button>
+	</div>
+
+</div>
+
 <footer class="ht-footer">
 	
 	<div class="container">
@@ -120,8 +217,8 @@
 
 <script   src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
 <script   src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"   integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="   crossorigin="anonymous"></script>
-<script src="js/lib/plugins.js"></script>
-<script src="js/lib/custom.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>

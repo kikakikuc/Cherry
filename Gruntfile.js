@@ -109,7 +109,7 @@ module.exports = function(grunt) {
 		-------------------------------------------*/
 		concat: {
 			js: {
-				src: ['<%= src_js %>/*.js','!<%= src_js %>/custom.js','<%= src_js %>/custom.js'],
+				src: ['<%= src_js %>/*.js','!<%= src_js %>/custom.js'],
 				dest: '<%= dest_js %>/plugins.js'
 			},
 			extras:{
@@ -139,6 +139,7 @@ module.exports = function(grunt) {
 						section: {
 							demo_section: '<%= src_html %>/demo_section.html',
 							hero_section: '<%= src_html %>/hero_section.html',
+							special_menu_section: '<%= src_html %>/special_menu_section.html',
 						},
 						widget: {
 							demo_widget: '<%= src_html %>/demo_widget.html',

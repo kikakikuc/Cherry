@@ -1,24 +1,34 @@
 // PAGE
-// 
+//
 @font-face {
 	font-family: Brush-Script;
 	src: url(../fonts/BrushScriptMT.ttf);
 }
-.text-Rose {
-	color: @c-Rose;
+
+body, h1,h2, h3, h4, h5, h6 {
+	font-family: @droid-serif;
 }
-.background-Rose {
-	background-color: @c-Rose;
+html { font-size: 62.5%; }  /* =10px */
+body { font-size: 1.4rem; } /* =14px */
+h1   { font-size: 3.6rem; } /* =24px */
+h2   { font-size: 3.0rem; }
+h3   { font-size: 2.4rem; }
+h4   { font-size: 1.8rem; }
+h5,p   { font-size: 1.4rem; }
+h6   { font-size: 1.2rem; }
+.text-Pink {
+	color: @c-Pink;
+}
+.background-Pink {
+	background-color: @c-Pink;
 	color: white;
 }
-p {
-	font-size: 14px;
-}
+
 a:hover {
 	text-decoration: none;
 }
 // HERO
-.ht-header {
+.menus {
 	position: relative;
 	.navbar {
 		position: absolute;
@@ -28,6 +38,7 @@ a:hover {
 		z-index: 1;
 	}
 }
+
 .hero {
 	background-image:  url(../images/home/hero.jpg);
 	background-size: cover;
@@ -41,17 +52,13 @@ a:hover {
 			font-family: Brush-Script;
 		}
 		h1 {
-			font-family: @droid-serif;
-			font-size: 72px;
+			font-size: 7.2rem;
 			font-weight: 700px;
 			display: inline-block;
 			padding: 10px;
 			margin: 25px 0;
 			border-bottom: 5px solid white;
 			border-top: 5px solid white;
-		}
-		h4 {
-			font-family: @droid-serif;
 		}		
 	}
 	.three-blocks {
@@ -79,15 +86,13 @@ a:hover {
 					justify-content: space-around;
 					p {
 						color: @c-Stone;
-						font-family: @droid-serif;
 						line-height: 25px;
 						span {
-							color: @c-Rose;
+							.text-Pink;
 						}
 					}
 					h5 a{
-						color: @c-Rose;
-						font-family: @droid-serif;
+						.text-Pink;
 						font-weight: 300;
 						font-style: Italic;
 					}
@@ -99,6 +104,75 @@ a:hover {
 				-webkit-transform: scale(1.03);
 				z-index: 1;
 			}
+		}
+	}
+	margin-bottom: 415px;
+}
+.heading {
+	text-align: center;
+	h1 {
+		.text-Pink;
+		font-family: @script;
+		font-size: 7.2rem;
+		font-style: Italic;
+		padding: 10px;
+	}
+	h5 {
+		font-weight: 400;
+	}
+}
+.special-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 1000px;
+
+	.iso-nav {
+		ul {
+			li {
+				color: @c-Silver;
+				font-family: @droid-serif;
+				padding: 0 15px;
+				&:hover {
+					.text-Pink;
+					cursor: pointer;
+				}
+			}
+			.active {
+				.text-Pink;
+			}
+		}
+	}
+	.grid {
+		.grid-item {
+			text-align: left;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 545px;
+			img {
+				width: 100%;
+				height: auto;
+			}
+			.menus {
+				color: @c-Pink;
+				display: flex;
+				justify-content: space-between;
+				border-top: 2px dotted @c-Pink;
+				border-bottom: 2px dotted @c-Pink;
+				padding: 15px 0;
+			}
+			
+		}
+	}
+	button {
+		.background-Pink;
+		font-family: @droid-serif;
+		&:focus, &:hover {
+			background-color: white;
+			.text-Pink;
+			border-color: @c-Pink;
+
 		}
 	}
 }

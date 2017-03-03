@@ -4014,23 +4014,57 @@ select {
   font-family: Brush-Script;
   src: url(../fonts/BrushScriptMT.ttf);
 }
-.text-Rose {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Droid Serif', serif;
+}
+html {
+  font-size: 62.5%;
+}
+/* =10px */
+body {
+  font-size: 1.4rem;
+}
+/* =14px */
+h1 {
+  font-size: 3.6rem;
+}
+/* =24px */
+h2 {
+  font-size: 3.0rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5,
+p {
+  font-size: 1.4rem;
+}
+h6 {
+  font-size: 1.2rem;
+}
+.text-Pink {
   color: #c3917d;
 }
-.background-Rose {
+.background-Pink {
   background-color: #c3917d;
   color: white;
-}
-p {
-  font-size: 14px;
 }
 a:hover {
   text-decoration: none;
 }
-.ht-header {
+.menus {
   position: relative;
 }
-.ht-header .navbar {
+.menus .navbar {
   position: absolute;
   top: 0;
   left: 0;
@@ -4042,6 +4076,7 @@ a:hover {
   background-size: cover;
   text-align: center;
   position: relative;
+  margin-bottom: 415px;
 }
 .hero .hero-text {
   color: white;
@@ -4052,17 +4087,13 @@ a:hover {
   font-family: Brush-Script;
 }
 .hero .hero-text h1 {
-  font-family: 'Droid Serif', serif;
-  font-size: 72px;
+  font-size: 7.2rem;
   font-weight: 700px;
   display: inline-block;
   padding: 10px;
   margin: 25px 0;
   border-bottom: 5px solid white;
   border-top: 5px solid white;
-}
-.hero .hero-text h4 {
-  font-family: 'Droid Serif', serif;
 }
 .hero .three-blocks {
   position: absolute;
@@ -4092,7 +4123,6 @@ a:hover {
 }
 .hero .three-blocks figure figcaption .block-content p {
   color: #7b8189;
-  font-family: 'Droid Serif', serif;
   line-height: 25px;
 }
 .hero .three-blocks figure figcaption .block-content p span {
@@ -4100,7 +4130,6 @@ a:hover {
 }
 .hero .three-blocks figure figcaption .block-content h5 a {
   color: #c3917d;
-  font-family: 'Droid Serif', serif;
   font-weight: 300;
   font-style: Italic;
 }
@@ -4109,6 +4138,67 @@ a:hover {
   background-color: #323c4b;
   -webkit-transform: scale(1.03);
   z-index: 1;
+}
+.heading {
+  text-align: center;
+}
+.heading h1 {
+  color: #c3917d;
+  font-family: Brush-Script;
+  font-size: 7.2rem;
+  font-style: Italic;
+  padding: 10px;
+}
+.heading h5 {
+  font-weight: 400;
+}
+.special-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 1000px;
+}
+.special-menu .iso-nav ul li {
+  color: #c6c6c6;
+  font-family: 'Droid Serif', serif;
+  padding: 0 15px;
+}
+.special-menu .iso-nav ul li:hover {
+  color: #c3917d;
+  cursor: pointer;
+}
+.special-menu .iso-nav ul .active {
+  color: #c3917d;
+}
+.special-menu .grid .grid-item {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 545px;
+}
+.special-menu .grid .grid-item img {
+  width: 100%;
+  height: auto;
+}
+.special-menu .grid .grid-item .menus {
+  color: #c3917d;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px dotted #c3917d;
+  border-bottom: 2px dotted #c3917d;
+  padding: 15px 0;
+}
+.special-menu button {
+  background-color: #c3917d;
+  color: white;
+  font-family: 'Droid Serif', serif;
+}
+.special-menu button:focus,
+.special-menu button:hover {
+  background-color: white;
+  color: #c3917d;
+  border-color: #c3917d;
 }
 nav {
   padding: 40px 40px;
