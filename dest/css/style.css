@@ -4236,6 +4236,43 @@ a:hover {
 .parallax .parallax-heading .heading-display:last-child {
   font-style: Italic;
 }
+.discover-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 1200px;
+}
+.discover-menu figure .flex-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 420px;
+}
+.discover-menu article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 420px;
+  padding: 0;
+}
+.discover-menu article .flex-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 340px;
+}
+.discover-menu article .flex-box h1 {
+  font-family: Brush-Script;
+  font-size: 7.2rem;
+  color: #c3917d;
+}
+.discover-menu article .flex-box h5 {
+  font-weight: 400;
+}
+.discover-menu article .flex-box p {
+  padding: 0 30px;
+}
 nav {
   padding: 40px 40px;
 }

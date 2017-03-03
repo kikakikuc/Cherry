@@ -141,6 +141,7 @@ module.exports = function(grunt) {
 							hero_section: '<%= src_html %>/hero_section.html',
 							special_menu_section: '<%= src_html %>/special_menu_section.html',
 							parallax_section: '<%= src_html %>/parallax_section.html',
+							discover_menu_section: '<%= src_html %>/discover_menu_section.html',
 						},
 						widget: {
 							demo_widget: '<%= src_html %>/demo_widget.html',
