@@ -4214,27 +4214,45 @@ a:hover {
   background-size: cover;
   height: 750px;
 }
-.parallax .parallax-heading {
-  color: white;
-  text-align: center;
+.black-box {
   -webkit-backdrop-filter: brightness(50%);
   height: 100%;
+  color: white;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.parallax .parallax-heading .heading-display {
+.black-box .heading-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 125px;
 }
-.parallax .parallax-heading .heading-display h1 {
+.black-box .heading-box h1 {
   font-family: Brush-Script;
   font-size: 7.2rem;
 }
-.parallax .parallax-heading .heading-display:last-child {
+.black-box .heading-box:last-child {
   font-style: Italic;
+}
+.culinary-delight {
+  background-image: url(../images/home/culinary-delight.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+}
+.culinary-delight .center-col {
+  display: flex;
+  justify-content: center;
+}
+.culinary-delight .center-col .heading-box {
+  height: 260px;
+}
+.culinary-delight .center-col .heading-box h2 {
+  font-family: Brush-Script;
+  font-style: Italic;
+  font-weight: 400;
 }
 .discover-menu {
   display: flex;
@@ -4256,11 +4274,11 @@ a:hover {
   padding: 0;
 }
 .discover-menu article .flex-box {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 340px;
+  text-align: center;
 }
 .discover-menu article .flex-box h1 {
   font-family: Brush-Script;

@@ -37,7 +37,11 @@ h6   { font-size: 1.2rem; }
 
 	}
 }
-
+.flex-column-content(@space) {
+	display: flex;
+	flex-direction: column;
+	justify-content: @space;
+}
 a:hover {
 	text-decoration: none;
 }
@@ -136,9 +140,7 @@ a:hover {
 	}
 }
 .special-menu {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	.flex-column-content(space-around);
 	height: 1000px;
 
 	.iso-nav {
@@ -160,9 +162,7 @@ a:hover {
 	.grid {
 		.grid-item {
 			text-align: left;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
+			.flex-column-content(space-between);
 			height: 545px;
 			img {
 				width: 100%;
@@ -189,54 +189,64 @@ a:hover {
 	background-position: center;
 	background-size: cover;
 	height: 750px;
-	.parallax-heading {
-		color: white;
-		text-align: center;
-		-webkit-backdrop-filter: brightness(50%);
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		.heading-display {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			height: 125px;
-			h1 {
-				.text-Heading;
-			}
-			&:last-child {
-				font-style: Italic;
-			}
+}
+
+.black-box {
+	-webkit-backdrop-filter: brightness(50%);
+	height: 100%;
+	color: white;
+	text-align: center;
+	.flex-column-content(space-around);
+	.heading-box {
+		.flex-column-content(space-between);
+		height: 125px;
+		h1 {
+			.text-Heading;
+		}
+		&:last-child {
+			font-style: Italic;
 		}
 	}
 }
+.culinary-delight {
+	background-image: url(../images/home/culinary-delight.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 550px;
+.center-col {
+	display: flex;
+	justify-content: center;
+
+	.heading-box {
+		height: 260px;
+		h2 {
+			font-family: @script;
+			font-style: Italic;
+			font-weight: 400;
+		}
+	}
+}
+}
+
+
 
 .discover-menu {
-	display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		height: 1200px;
+	.flex-column-content(space-around);
+	height: 1200px;
 	figure {
 		.flex-box {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
+			.flex-column-content(space-between);
 			height: 420px;
 		}
 	}
 	article {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
+		.flex-column-content(space-around);
 		height: 420px;
 		padding: 0;
 		.flex-box {
-			text-align: center;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
+			.flex-column-content(space-between);
 			height: 340px;
+			text-align: center;
 			h1 {
 				.text-Heading;
 				.text-Pink;
