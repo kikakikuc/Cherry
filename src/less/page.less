@@ -135,9 +135,6 @@ a:hover {
 		font-style: Italic;
 		padding: 10px;
 	}
-	h5 {
-		font-weight: 400;
-	}
 }
 .special-menu {
 	.flex-column-content(space-around);
@@ -255,4 +252,30 @@ a:hover {
 		}
 		
 	}
+}
+.blog {
+	.flex-column-content(space-between);
+	height: 1000px;
+	article {
+		height: 290px;
+		padding: 30px 15px;
+		.flex-column-content(space-around);
+		h6 {
+			color: @c-Silver;
+			font-weight: 400;
+		}
+		p {
+			span {
+				.text-Pink;
+			}
+		}
+		a {
+			.text-Pink;
+			font-size: 12px;
+			&:hover {
+				color: @c-Gray;
+			}
+		}
+	}
+
 }
