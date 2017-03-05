@@ -4233,25 +4233,21 @@ a:hover {
   font-family: Brush-Script;
   font-size: 7.2rem;
 }
-.black-box .heading-box:last-child {
-  font-style: Italic;
-}
 .culinary-delight {
   background-image: url(../images/home/culinary-delight.jpg);
   background-position: center;
   background-size: cover;
   height: 550px;
 }
-.culinary-delight .center-col {
+.culinary-delight .center-box {
   display: flex;
   justify-content: center;
 }
-.culinary-delight .center-col .heading-box {
+.culinary-delight .center-box .heading-box {
   height: 260px;
 }
-.culinary-delight .center-col .heading-box h2 {
+.culinary-delight .center-box .heading-box h2 {
   font-family: Brush-Script;
-  font-style: Italic;
   font-weight: 400;
 }
 .discover-menu {
