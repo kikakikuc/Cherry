@@ -4073,6 +4073,10 @@ h6 {
   color: #c3917d;
   border-color: #c3917d;
 }
+.flex-content-center {
+  display: flex;
+  justify-content: center;
+}
 a:hover {
   text-decoration: none;
 }
@@ -4301,12 +4305,12 @@ a:hover {
   color: #c6c6c6;
   font-weight: 400;
 }
-.blog article p span {
-  color: #c3917d;
+.blog article p a {
+  font-size: 1.4rem;
 }
 .blog article a {
   color: #c3917d;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 .blog article a:hover {
   color: #616161;
@@ -4359,4 +4363,49 @@ nav .nav li:hover a {
 nav .nav li:focus a:after,
 nav .nav li:hover a:after {
   -webkit-transform: translate3d(0, 0, 0);
+}
+.ht-footer {
+  text-align: center;
+}
+.ht-footer ul li a,
+.ht-footer i {
+  color: #c3917d;
+}
+.ht-footer .pre-footer {
+  background-color: #222222;
+}
+.ht-footer .pre-footer .center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+}
+.ht-footer .pre-footer .center-box .center-box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 215px;
+}
+.ht-footer .pre-footer .center-box .center-box-content img {
+  background-color: #222222;
+}
+.ht-footer .pre-footer .center-box .center-box-content h4 {
+  color: white;
+  font-weight: 400;
+}
+.ht-footer .pre-footer .center-box .center-box-content p {
+  color: #7b8189;
+}
+.ht-footer .footer {
+  background-color: #1f1f1f;
+  padding: 40px;
+}
+.ht-footer .footer ul li a .fa-square {
+  color: #252525;
+}
+.ht-footer .footer p {
+  color: #616161;
+}
+.ht-footer .footer p span {
+  color: #c3917d;
 }

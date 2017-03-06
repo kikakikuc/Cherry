@@ -144,6 +144,7 @@ module.exports = function(grunt) {
 							discover_menu_section: '<%= src_html %>/discover_menu_section.html',
 							portfolio_section: '<%= src_html %>/portfolio_section.html',
 							blog_section: '<%= src_html %>/blog_section.html',
+							menu_section: '<%= src_html %>/menu_section.html',
 						},
 						widget: {
 							demo_widget: '<%= src_html %>/demo_widget.html',

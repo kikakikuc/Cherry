@@ -42,6 +42,10 @@ h6   { font-size: 1.2rem; }
 	flex-direction: column;
 	justify-content: @space;
 }
+.flex-content-center {
+	display: flex;
+	justify-content: center;
+}
 a:hover {
 	text-decoration: none;
 }
@@ -208,8 +212,7 @@ a:hover {
 	background-size: cover;
 	height: 550px;
 .center-box {
-	display: flex;
-	justify-content: center;
+	.flex-content-center;
 	.heading-box {
 		height: 260px;
 		h2 {
@@ -265,13 +268,13 @@ a:hover {
 			font-weight: 400;
 		}
 		p {
-			span {
-				.text-Pink;
+			a {
+				font-size: 1.4rem;
 			}
 		}
 		a {
 			.text-Pink;
-			font-size: 12px;
+			font-size: 1.2rem;
 			&:hover {
 				color: @c-Gray;
 			}
