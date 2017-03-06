@@ -4191,7 +4191,7 @@ a:hover {
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 545px;
 }
 .special-menu .grid .grid-item img {
@@ -4314,6 +4314,21 @@ a:hover {
 }
 .blog article a:hover {
   color: #616161;
+}
+.menu .menu-hero {
+  margin-bottom: 0;
+}
+.menu .menu-hero .hero-text {
+  padding: 160px 0 100px;
+}
+.menu .menu-hero .hero-text h1 {
+  font-size: 4.8rem;
+}
+.menu .container.special-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 1480px;
 }
 nav {
   padding: 40px 40px;
