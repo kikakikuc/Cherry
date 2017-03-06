@@ -4288,31 +4288,31 @@ a:hover {
 .discover-menu article .flex-box p {
   padding: 0 30px;
 }
-.blog {
+.blog-home {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 1000px;
 }
-.blog article {
+.blog-home article {
   height: 290px;
   padding: 30px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.blog article h6 {
+.blog-home article h6 {
   color: #c6c6c6;
   font-weight: 400;
 }
-.blog article p a {
+.blog-home article p a {
   font-size: 1.4rem;
 }
-.blog article a {
+.blog-home article a {
   color: #c3917d;
   font-size: 1.2rem;
 }
-.blog article a:hover {
+.blog-home article a:hover {
   color: #616161;
 }
 .menu .menu-hero {
@@ -4329,6 +4329,103 @@ a:hover {
   flex-direction: column;
   justify-content: space-around;
   height: 1480px;
+}
+.navbar-inverse {
+  background-color: #222222;
+  height: 100px;
+}
+.blog-heading {
+  margin-top: 100px;
+  text-align: center;
+}
+.blog-heading h1 {
+  font-family: Brush-Script;
+  font-size: 7.2rem;
+}
+.blog {
+  padding: 100px;
+}
+.blog .posts article {
+  padding-bottom: 30px;
+}
+.blog .posts h5 {
+  padding: 15px 0;
+  font-weight: 400;
+  line-height: 25px;
+}
+.blog .posts h5 a {
+  color: black;
+}
+.blog .posts p {
+  word-break: break-all;
+}
+.blog .posts ul {
+  color: #bababa;
+}
+.blog .posts ul li {
+  padding-right: 40px;
+}
+.blog .posts .quote {
+  border: 1px solid #bababa;
+  padding: 20px 30px;
+  margin-bottom: 50px;
+}
+.blog .posts .quote a {
+  color: #bababa;
+  word-break: break-all;
+}
+.blog .posts .quote a:hover {
+  color: #c3917d;
+}
+.blog .posts .quote h4 {
+  font-weight: 400;
+  word-break: break-all;
+  line-height: 30px;
+}
+.blog .posts .quote p {
+  padding-top: 30px;
+}
+.blog .sidebar h5 {
+  font-weight: 400;
+}
+.blog .sidebar input {
+  width: 300px;
+  margin: 20px 0 40px;
+}
+.blog .sidebar input::-webkit-input-placeholder {
+  font-style: Italic;
+}
+.blog .sidebar ul {
+  padding: 10px 0;
+}
+.blog .sidebar ul li {
+  padding: 5px 0;
+}
+.blog .sidebar ul li a {
+  color: #bababa;
+}
+.blog .sidebar ul li a:hover {
+  color: black;
+}
+.blog .sidebar .recent-post ul li a {
+  position: relative;
+  overflow: hidden;
+}
+.blog .sidebar .recent-post ul li a:before {
+  position: absolute;
+  height: 3px;
+  width: 8px;
+  top: 25%;
+  left: -20px;
+  content: '';
+  background-color: black;
+  -webkit-transition: -webkit-transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  opacity: 0;
+}
+.blog .sidebar .recent-post ul li:hover a:before {
+  -webkit-transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 nav {
   padding: 40px 40px;
