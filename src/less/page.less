@@ -23,6 +23,12 @@ h6   { font-size: 1.2rem; }
 	font-family: @script;
 	font-size: 7.2rem;
 }
+.text-blog {
+	color: @c-Silver-blog;
+}
+.text-blog-single {
+	color: @c-Silver-blog-single;
+}
 .background-Pink {
 	background-color: @c-Pink;
 	color: white;
@@ -309,9 +315,12 @@ a:hover {
 	h1 {
 		.text-Heading;
 	}
+	ul li {
+		padding: 20px;
+	}
 }
 .blog {
-	padding: 100px;
+	padding: 100px 0;
 	.posts {
 		article {
 			padding-bottom: 30px;
@@ -328,7 +337,7 @@ a:hover {
 			word-break: break-all;
 		}
 		ul {
-			color: @c-Silver-blog;
+			.text-blog;
 			li {
 				padding-right: 40px;
 			}
@@ -337,7 +346,7 @@ a:hover {
 			border: 1px solid @c-Silver-blog;
 			padding: 20px 30px;
 			a {
-				color: @c-Silver-blog;
+				.text-blog;
 				word-break: break-all;
 				&:hover {
 					.text-Pink;
@@ -371,15 +380,11 @@ a:hover {
 			li {
 				padding: 5px 0;
 				a {
-					color: @c-Silver-blog;
-					&:hover {
-						color: black;
-					}
+					.text-blog;
 				}
 			}
 		}
 		.recent-post {
-
 			ul li {
 				a {
 					position: relative;
@@ -399,6 +404,7 @@ a:hover {
 		        }
 				&:hover {
 					a {
+						color: black;
 						&:before {
 							-webkit-transform: translate3d(0,0,0);
 							opacity: 1;
@@ -409,8 +415,101 @@ a:hover {
 			}
 		}
 	}
+	.single-post {
+		color: black;
+		.body-text {
+			p {
+				word-break: break-all;
+				padding: 10px 0;
+			}
+			blockquote {
+				.text-blog-single;
+				border-color: @c-Pink;
+				font-weight: 700;
+				margin: 3rem 0;
+			}
+			ul {
+				list-style: square inside;
+				li {
+					padding: 10px;
+				}
+			}
+		}
+		.flex-box {
+			display: flex;
+			justify-content: space-between;
+			padding: 3rem 0;
+			h5 {
+				display: inline-block;
+			}
+			a {
+				color: @c-Silver-blog-single;
+			}
+			.tags {
+				a:hover {
+					.text-Pink;
+				}
+			}
+			.social {
+				a:hover {
+					color: black;
+				}
+				margin: 0;
+			}
+		}
+		.author-box {
+			display: flex;
+			justify-content: flex-end;
+			padding: 30px 0;
+			p {
+				color: @c-Silver-blog-single;
+			}
+		}
+		h4 {
+			padding: 35px 0;
+		}
+		.comments {
+			.comment-box {
+				display: flex;
+				justify-content: flex-end;
+				small {
+					.text-blog-single;
+				}
+				p {
+					word-break: break-all;
+					padding: 20px 0;
+				}
+			}
+		}
+		hr {
+			background-color: @c-Silver-blog-single;
+		}
+		form {
+			label {
+				.text-blog-single;
+			}
+			input,
+			textarea{
+				border-color: white;
+				&:focus,
+				&:hover {
+					border-color: @c-Silver-blog-single;
+					box-shadow: none;
+				}
+			}
+			button {
+				.text-blog-single;
+				background-color: white;
+				border-color: @c-Silver-blog-single;
+				border-radius: 20px;
+				margin: 40px 0;
+				&:hover {
+					.btn-Pink;
+				}
+			}
+		}
+	}
 }
-
 
 
 

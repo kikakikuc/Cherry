@@ -148,6 +148,8 @@ module.exports = function(grunt) {
 							blog_heading_section: '<%= src_html %>/blog_heading_section.html',
 							blog_posts_section:'<%= src_html %>/blog_posts_section.html',
 							blog_sidebar_section:'<%= src_html %>/blog_sidebar_section.html',
+							blog_single_heading_section: '<%= src_html %>/blog_single_heading_section.html',
+							blog_single_posts_section:'<%= src_html %>/blog_single_posts_section.html',
 						},
 						widget: {
 							demo_widget: '<%= src_html %>/demo_widget.html',
