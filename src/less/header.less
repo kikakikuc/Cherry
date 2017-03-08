@@ -6,6 +6,7 @@ nav {
 	.navbar-header {
 		.navbar-toggle {
 			margin: 0;
+			padding:0;
 		}
 		h4 {
 			display: inline;
@@ -15,11 +16,7 @@ nav {
 			}
 		} 
 	}
-	@media screen and (min-width: 768px) {
-		.navbar-collapse {
-			padding: 0;
-		}	
-	}
+
 	.nav {
 		li {
 			padding: 0 20px;
@@ -44,7 +41,7 @@ nav {
 			}
 			&:focus,&:hover {
 				a {
-					.text-Pink;
+					background-color: transparent;
 					&:after {
 						-webkit-transform: translate3d(0,0,0);
 					}
@@ -52,4 +49,9 @@ nav {
 			}	
 		}
 	}
+}
+@media only screen and (max-width: 768px) {
+		// .navbar {
+		// 	background-color: @c-Blog;
+		// }
 }
