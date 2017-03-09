@@ -4491,6 +4491,44 @@ i {
   -webkit-transform: translate3d(0, 0, 0);
   opacity: 1;
 }
+.blog .sidebar .calendar h5 {
+  margin: 30px 0;
+}
+.blog .sidebar .calendar .table caption {
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.blog .sidebar .calendar .table th {
+  text-align: center;
+  padding: 20px 0;
+  margin: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.blog .sidebar .calendar .table tbody td {
+  color: #acacac;
+  line-height: 25px;
+  padding: 0 10px;
+  text-align: center;
+  border: none;
+}
+.blog .sidebar .calendar .table tbody td .active {
+  border: 1px solid black;
+  border-radius: 50%;
+  color: #303030;
+}
+@media screen and (max-width: 768px) {
+  .blog .sidebar .calendar .table tbody td {
+    padding: 0 5px;
+  }
+}
+.blog .sidebar .calendar .table tbody:before {
+  line-height: 20px;
+  content: "\200C";
+  display: block;
+}
 .blog .single-post {
   color: black;
 }
