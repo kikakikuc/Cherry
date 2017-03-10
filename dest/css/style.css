@@ -4076,7 +4076,7 @@ h6 {
   background-color: #c3917d;
   color: white;
   font-family: 'Droid Serif', serif;
-  padding: 10px 27px;
+  padding: 7px 27px;
 }
 .btn-Pink:focus,
 .btn-Pink:hover {
@@ -4180,7 +4180,7 @@ i {
 }
 @media only screen and (max-width: 768px) {
   .hero {
-    margin-bottom: 1700px;
+    margin-bottom: 1800px;
   }
 }
 .heading {
@@ -4631,7 +4631,7 @@ i {
   background-color: #c3917d;
   color: white;
   font-family: 'Droid Serif', serif;
-  padding: 10px 27px;
+  padding: 7px 27px;
 }
 .blog .single-post form button:hover:focus,
 .blog .single-post form button:hover:hover {
