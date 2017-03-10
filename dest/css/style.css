@@ -4076,6 +4076,7 @@ h6 {
   background-color: #c3917d;
   color: white;
   font-family: 'Droid Serif', serif;
+  padding: 10px 27px;
 }
 .btn-Pink:focus,
 .btn-Pink:hover {
@@ -4136,7 +4137,8 @@ i {
 }
 .hero .three-blocks figure {
   background-color: #364151;
-  padding: 0;
+  padding: 0 0 20px;
+  margin-bottom: 40px;
 }
 .hero .three-blocks figure figcaption h1 {
   color: white;
@@ -4145,7 +4147,6 @@ i {
 }
 .hero .three-blocks figure figcaption .block-content {
   height: 290px;
-  box-sizing: border-box;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
   padding: 30px 0;
@@ -4165,6 +4166,11 @@ i {
   color: #c3917d;
   font-weight: 300;
   font-style: Italic;
+}
+@media screen and (max-width: 768px) {
+  .hero .three-blocks figure figcaption .block-content {
+    margin: 30px;
+  }
 }
 .hero .three-blocks figure:nth-child(2) {
   box-shadow: 0 0 15px black;
@@ -4363,6 +4369,9 @@ i {
   font-weight: 700;
   font-size: 1.2rem;
 }
+.blog-home div a:hover {
+  color: #c3917d;
+}
 .menu .menu-hero {
   margin-bottom: 0;
 }
@@ -4540,7 +4549,6 @@ i {
 }
 .blog .single-post .body-text p {
   word-break: break-all;
-  padding: ;
 }
 .blog .single-post .body-text blockquote {
   color: #aeaeae;
@@ -4623,6 +4631,7 @@ i {
   background-color: #c3917d;
   color: white;
   font-family: 'Droid Serif', serif;
+  padding: 10px 27px;
 }
 .blog .single-post form button:hover:focus,
 .blog .single-post form button:hover:hover {

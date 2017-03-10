@@ -39,6 +39,7 @@ h6   { font-size: 1.2rem; }
 .btn-Pink {
 	.background-Pink;
 	font-family: @droid-serif;
+	padding: 10px 27px;
 	&:focus, &:hover {
 		background-color: white;
 		.text-Pink;
@@ -107,7 +108,8 @@ i {
 		top: 900px;
 		figure {
 			background-color: @c-Blue;
-			padding: 0;
+			padding: 0 0 20px;
+			margin-bottom: 40px;
 			figcaption {
 				h1 {
 					color: white;
@@ -116,7 +118,6 @@ i {
 				}
 				.block-content {
 					height: 290px;
-					box-sizing: border-box;
 					border-top: 1px solid #ffffff;
 					border-bottom: 1px solid #ffffff;
 					padding: 30px 0;
@@ -133,6 +134,10 @@ i {
 						.text-Pink;
 						font-weight: 300;
 						font-style: Italic;
+					}
+					@media screen and (max-width: 768px) {
+						margin: 30px;
+
 					}
 				}
 			}
@@ -322,9 +327,14 @@ i {
 			font-weight: 700;
 			font-size: 1.2rem;
 		}
-
 	}
-
+	div {
+		a {
+			&:hover {
+				.text-Pink;
+			}
+		}
+	}
 }
 
 .menu {
@@ -519,7 +529,6 @@ i {
 			}
 			p {
 				word-break: break-all;
-				padding:  ;
 			}
 			blockquote {
 				.text-blog-single;
